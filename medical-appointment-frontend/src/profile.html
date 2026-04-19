@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile — MedApp</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="wrap header-row">
+            <a class="brand" href="index.html">MedApp</a>
+            <nav class="main-nav">
+                <a href="book-appointment.html">Book</a>
+                <a href="doctors.html">Doctors</a>
+                <a href="dashboard.html" class="btn small">Dashboard</a>
+                <a href="profile.html">Profile</a>
+                <a href="settings.html">Settings</a>
+                <a href="login.html" class="btn ghost small">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="wrap" style="padding: 2rem 0;">
+        <div class="card" style="max-width: 800px; margin: 0 auto;">
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <i class="fas fa-user-circle" style="font-size: 5rem; color: var(--primary);"></i>
+                <h1 class="page-title" style="margin-top: 1rem;">Your Profile</h1>
+                <p class="muted">Manage your personal information</p>
+            </div>
+            
+            <form class="form">
+                <div class="form-row">
+                    <label for="fullname">Full name</label>
+                    <input type="text" id="fullname" value="John Doe" placeholder="Your full name">
+                </div>
+                <div class="form-row">
+                    <label for="profile-email">Email address</label>
+                    <input type="email" id="profile-email" value="john.doe@example.com">
+                </div>
+                <div class="form-row">
+                    <label for="phone">Phone number</label>
+                    <input type="tel" id="phone" value="+1 (555) 123-4567">
+                </div>
+                <div class="form-row">
+                    <label for="dob">Date of birth</label>
+                    <input type="date" id="dob" value="1990-01-01">
+                </div>
+                <div class="form-actions">
+                    <button class="btn primary" type="submit">Save Changes</button>
+                    <a href="dashboard.html" class="btn ghost">Back to Dashboard</a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap footer-row">
+            <div>© 2026 MedApp. All rights reserved.</div>
+            <nav class="footer-nav">
+                <a href="profile.html">Profile</a>
+                <a href="settings.html">Settings</a>
+                <a href="doctors.html">Doctors</a>
+                <a href="index.html">Home</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login — MedApp</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="page-auth">
+    <header class="site-header">
+        <div class="wrap header-row">
+            <a class="brand" href="index.html">MedApp</a>
+            <nav class="main-nav">
+                <a href="book-appointment.html">Book</a>
+                <a href="doctors.html">Doctors</a>
+                <a href="dashboard.html" class="btn small">Dashboard</a>
+                <a href="profile.html">Profile</a>
+                <a href="settings.html">Settings</a>
+                <a href="login.html" class="btn ghost small">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="wrap auth-wrap">
+        <section class="card auth-card">
+            <div class="auth-columns">
+                <div class="auth-visual">
+<img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef" 
+     style="width:90%; margin: 4pc; border-radius:15px;">                </div>
+                <div class="auth-form">
+                    <h1 class="page-title" style="margin-bottom: 0.5rem;">Welcome back</h1>
+                    <p class="muted">Sign in to manage your appointments</p>
+                    <form class="form" action="#" method="POST">
+                        <div class="form-row">
+                            <label for="email">Email address</label>
+                            <input id="email" name="email" type="email" required placeholder="you@example.com">
+                        </div>
+                        <div class="form-row">
+                            <label for="password">Password</label>
+                            <input id="password" name="password" type="password" required placeholder="••••••••">
+                        </div>
+                        <div class="form-actions">
+                            <button class="btn primary" type="submit">Sign in</button>
+                            <a class="link" href="signup.html">Create account</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap footer-row">
+            <div>© 2026 MedApp. All rights reserved.</div>
+            <nav class="footer-nav">
+                <a href="profile.html">Profile</a>
+                <a href="settings.html">Settings</a>
+                <a href="doctors.html">Doctors</a>
+                <a href="index.html">Home</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

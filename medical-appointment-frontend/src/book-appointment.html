@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment — MedApp</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="wrap header-row">
+            <a class="brand" href="index.html">MedApp</a>
+            <nav class="main-nav">
+                <a href="book-appointment.html">Book</a>
+                <a href="doctors.html">Doctors</a>
+                <a href="dashboard.html" class="btn small">Dashboard</a>
+                <a href="profile.html">Profile</a>
+                <a href="settings.html">Settings</a>
+                <a href="login.html" class="btn ghost small">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="wrap" style="padding: 2rem 0;">
+        <div class="card" style="max-width: 800px; margin: 0 auto;">
+            <h1 class="page-title">Book an Appointment</h1>
+            <p class="muted">Fill out the details below to schedule your visit</p>
+            
+            <form class="form" action="#" method="POST">
+                <div class="form-row">
+                    <label for="patient-name">Patient name</label>
+                    <input id="patient-name" type="text" name="patient_name" required placeholder="Full name">
+                </div>
+                <div class="form-row">
+                    <label for="email">Email address</label>
+                    <input id="email" type="email" name="email" required placeholder="you@example.com">
+                </div>
+                <div class="form-row">
+                    <label for="phone">Phone number</label>
+                    <input id="phone" type="tel" name="phone" placeholder="+1 (555) 000-0000">
+                </div>
+                <div class="form-row split">
+                    <div>
+                        <label for="date">Preferred date</label>
+                        <input id="date" type="date" name="date" required>
+                    </div>
+                    <div>
+                        <label for="time">Preferred time</label>
+                        <input id="time" type="time" name="time" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="doctor">Select doctor</label>
+                    <select id="doctor" name="doctor">
+                        <option>Dr. Alice Johnson — General Medicine</option>
+                        <option>Dr. Mark Lee — Cardiology</option>
+                        <option>Dr. Sara Patel — Pediatrics</option>
+                        <option>Dr. Emily Chen — Dermatology</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="reason">Reason for visit / Notes</label>
+                    <textarea id="reason" name="reason" rows="4" placeholder="Describe your symptoms or reason for appointment..."></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn primary">Request Appointment</button>
+                    <a class="btn ghost" href="dashboard.html">View Dashboard</a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap footer-row">
+            <div>© 2026 MedApp. All rights reserved.</div>
+            <nav class="footer-nav">
+                <a href="profile.html">Profile</a>
+                <a href="settings.html">Settings</a>
+                <a href="doctors.html">Doctors</a>
+                <a href="index.html">Home</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

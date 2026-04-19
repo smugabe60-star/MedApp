@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings — MedApp</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="wrap header-row">
+            <a class="brand" href="index.html">MedApp</a>
+            <nav class="main-nav">
+                <a href="book-appointment.html">Book</a>
+                <a href="doctors.html">Doctors</a>
+                <a href="dashboard.html" class="btn small">Dashboard</a>
+                <a href="profile.html">Profile</a>
+                <a href="settings.html">Settings</a>
+                <a href="login.html" class="btn ghost small">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="wrap" style="padding: 2rem 0;">
+        <div class="card" style="max-width: 700px; margin: 0 auto;">
+            <h1 class="page-title" style="text-align: center;">Settings</h1>
+            
+            <form class="form">
+                <h3 style="margin: 1.5rem 0 1rem;">Change Password</h3>
+                <div class="form-row">
+                    <label for="current-password">Current Password</label>
+                    <input type="password" id="current-password" placeholder="Enter current password">
+                </div>
+                <div class="form-row">
+                    <label for="new-password">New Password</label>
+                    <input type="password" id="new-password" placeholder="At least 8 characters">
+                </div>
+                <div class="form-row">
+                    <label for="confirm-password">Confirm New Password</label>
+                    <input type="password" id="confirm-password" placeholder="Repeat new password">
+                </div>
+                
+                <h3 style="margin: 1.5rem 0 1rem;">Notifications</h3>
+                <div class="form-row">
+                    <label for="notification-pref">Notification Preference</label>
+                    <select id="notification-pref">
+                        <option>Email notifications</option>
+                        <option>SMS notifications</option>
+                        <option>Push notifications</option>
+                        <option>None</option>
+                    </select>
+                </div>
+                
+                <div class="checkbox-group">
+                    <input type="checkbox" id="reminders" checked>
+                    <label for="reminders">Send appointment reminders</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="newsletter">
+                    <label for="newsletter">Receive health tips and newsletters</label>
+                </div>
+                
+                <div class="form-actions">
+                    <button class="btn primary" type="submit">Save Changes</button>
+                    <button class="btn ghost" type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap footer-row">
+            <div>© 2026 MedApp. All rights reserved.</div>
+            <nav class="footer-nav">
+                <a href="profile.html">Profile</a>
+                <a href="settings.html">Settings</a>
+                <a href="doctors.html">Doctors</a>
+                <a href="index.html">Home</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

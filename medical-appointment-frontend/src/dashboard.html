@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard — MedApp</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="wrap header-row">
+            <a class="brand" href="index.html">MedApp</a>
+            <nav class="main-nav">
+                <a href="book-appointment.html">Book</a>
+                <a href="doctors.html">Doctors</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="profile.html">Profile</a>
+                <a href="settings.html">Settings</a>
+                <a href="login.html" class="btn ghost small">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="wrap" style="padding: 2rem 0;">
+        <div class="card">
+            <h1 class="page-title">Your Appointments</h1>
+            
+            <div class="appointments">
+                <div class="appointment">
+                    <div class="meta">
+                        <div class="date"><i class="far fa-calendar"></i> 2026-04-02</div>
+                        <div class="time"><i class="far fa-clock"></i> 09:30 AM</div>
+                    </div>
+                    <div class="details">
+                        <h3>Consultation with Dr. Alice Johnson</h3>
+                        <p>Reason: Routine check-up</p>
+                        <span class="status confirmed">Confirmed</span>
+                    </div>
+                </div>
+                
+                <div class="appointment">
+                    <div class="meta">
+                        <div class="date"><i class="far fa-calendar"></i> 2026-04-10</div>
+                        <div class="time"><i class="far fa-clock"></i> 02:00 PM</div>
+                    </div>
+                    <div class="details">
+                        <h3>Cardiology follow-up — Dr. Mark Lee</h3>
+                        <p>Reason: Chest pain follow-up</p>
+                        <span class="status pending">Pending</span>
+                    </div>
+                </div>
+                
+                <div class="appointment">
+                    <div class="meta">
+                        <div class="date"><i class="far fa-calendar"></i> 2026-04-18</div>
+                        <div class="time"><i class="far fa-clock"></i> 11:15 AM</div>
+                    </div>
+                    <div class="details">
+                        <h3>Dermatology check — Dr. Emily Chen</h3>
+                        <p>Reason: Skin consultation</p>
+                        <span class="status confirmed">Confirmed</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-actions" style="margin-top: 2rem;">
+                <a class="btn primary" href="book-appointment.html">+ Book New Appointment</a>
+                <a class="btn ghost" href="doctors.html">Browse Doctors</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap footer-row">
+            <div>© 2026 MedApp. All rights reserved.</div>
+            <nav class="footer-nav">
+                <a href="profile.html">Profile</a>
+                <a href="settings.html">Settings</a>
+                <a href="doctors.html">Doctors</a>
+                <a href="index.html">Home</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
